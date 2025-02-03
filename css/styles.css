@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+a.skip-link:focus {
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Image Styles */
+.images img {
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Grid Layout */
+.technology .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Flex Layout */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* nth-child Selector */
+.images img:nth-child(odd) {
+    border-radius: 20px;
+}
